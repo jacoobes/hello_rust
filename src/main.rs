@@ -1,3 +1,5 @@
+use std::ops::Range;
+
 //mod print;
 //mod vars;
 //mod types;
@@ -25,6 +27,26 @@ fn main() {
  // let greet = String::from("Hola");
  //  test(&greet);
  //  let capacity = greet.capacity();
+
+fizz_buzz(1..100)
+
+}
+
+fn fizz_buzz(range: Range<i64>) {
+
+   for x in range {
+       if x % 15 == 0 {
+           println!("{}", "fizzbuzz")
+       } else if x % 5 == 0 {
+           println!("{}", "buzz")
+       } else if x % 3 ==0  {
+           println!("{}", "fizz")
+       } else {
+           println!("{}", x)
+       }
+
+   }
+
 
 }
 
