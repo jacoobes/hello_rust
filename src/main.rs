@@ -10,6 +10,7 @@ use std::ops::Range;
 // mod conditions;
 // mod loops;
 mod functions;
+mod ownership_borrowing;
 
 fn main() {
     println!("Hello, world!");
@@ -28,8 +29,8 @@ fn main() {
  //  test(&greet);
  //  let capacity = greet.capacity();
 
-fizz_buzz(1..100)
-
+//fizz_buzz(1..100)
+ownership_borrowing::run()
 }
 
 fn fizz_buzz(range: Range<i64>) {
